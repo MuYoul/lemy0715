@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>lemy0715 포트폴리오</title>
+<meta name="description" content="기획부터 배포까지, 실제로 돌아가는 서비스를 혼자 끝까지 만듭니다. 앱인토스 게임, 배달 앱, AI 비서, 자동매매 봇.">
+<meta property="og:title" content="lemy0715 포트폴리오">
+<meta property="og:description" content="지금 바로 해 볼 수 있는 게임 6종과 앱·AI·자동화 작업 모음">
+<meta property="og:image" content="img/sacheonseong.jpg">
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#1d1b18;--muted:#6b665d;--line:#e4dfd4;--accent:#2f6df6;--accent-ink:#fff;--bar:#2f6df6;--chip:#f0ede6}
+@media (prefers-color-scheme:dark){:root{--bg:#131311;--card:#1d1c1a;--ink:#f1eee8;--muted:#a39d92;--line:#2f2d29;--accent:#6b97ff;--accent-ink:#0b1430;--bar:#6b97ff;--chip:#2a2825}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:56px 0 28px}
+.eyebrow{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+h1{font-size:clamp(28px,6vw,48px);line-height:1.22;letter-spacing:-.03em;margin:10px 0 14px;word-break:keep-all}
+.lead{color:var(--muted);font-size:17px;max-width:640px;margin:0;word-break:keep-all}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:12px;font-weight:700;text-decoration:none;border:1px solid var(--line);background:var(--card)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stat b{display:block;font-size:24px;letter-spacing:-.02em}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:36px 0}
+h2{font-size:22px;letter-spacing:-.02em;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 18px;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+@media (min-width:960px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.shot{display:block;aspect-ratio:1/1;background:var(--chip);overflow:hidden;position:relative}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+.play{position:absolute;right:10px;bottom:10px;background:var(--accent);color:var(--accent-ink);font-size:13px;font-weight:800;padding:6px 12px;border-radius:999px}
+.body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.kind{font-size:12px;font-weight:700;color:var(--accent)}
+.card h3{margin:0;font-size:18px;letter-spacing:-.02em}
+.desc{margin:0;font-size:14px;color:var(--muted);word-break:keep-all}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px;margin:4px 0 0}
+.meta dt{color:var(--muted)}.meta dd{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.chip{font-size:12px;background:var(--chip);border-radius:999px;padding:3px 9px}
+.link{font-size:14px;font-weight:700;color:var(--accent);text-decoration:none;word-break:break-all}
+.bars{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.row{display:grid;grid-template-columns:44px 1fr 56px;gap:10px;align-items:center;font-size:14px}
+.track{height:14px;background:var(--chip);border-radius:7px;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:7px}
+.row b{text-align:right;font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--muted);margin:10px 0 0}
+.cta{background:var(--ink);color:var(--bg);border-radius:22px;padding:28px 20px;text-align:center}
+.cta h2{font-size:24px}
+.cta p{opacity:.75;margin:0 0 18px}
+.cta .btn{border:0}
+footer{padding:28px 0 48px;font-size:13px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">FREELANCE DEVELOPER · lemy0715</div>
+  <h1 id="pitch"></h1>
+  <p class="lead" id="summary"></p>
+  <div class="btns">
+    <a class="btn primary" id="kmong" href="https://kmong.com/@lemy0715">크몽에서 의뢰하기</a>
+    <a class="btn" href="#work">작업물 보기</a>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+<main class="wrap">
+  <section id="work">
+    <h2>작업물</h2>
+    <p class="sub">게임은 카드를 누르면 바로 해 볼 수 있어요.</p>
+    <div class="grid" id="projects"></div>
+  </section>
+  <section>
+    <h2>GitHub 활동</h2>
+    <p class="sub">해마다 커밋·이슈·PR로 남긴 기여 수예요.</p>
+    <div class="bars" id="bars"></div>
+    <p class="note" id="barsNote"></p>
+  </section>
+  <section>
+    <div class="cta">
+      <h2>만들고 싶은 게 있으신가요?</h2>
+      <p>가능 여부와 예상 범위를 먼저 솔직하게 말씀드려요.</p>
+      <a class="btn primary" id="kmong2" href="https://kmong.com/@lemy0715">크몽 프로필로 문의하기</a>
+    </div>
+  </section>
+</main>
+<footer class="wrap" id="footer"></footer>
+<script>
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const host = u => u.replace(/^https?:\/\//, '');
+fetch('projects.json').then(r => r.json()).then(d => {
+  pitch.textContent = d.pitch;
+  summary.textContent = d.summary;
+  kmong.href = kmong2.href = d.kmong;
+  const ps = d.projects, years = Object.entries(d.contributions);
+  const playable = ps.filter(p => p.url && p.img).length;
+  const total = years.reduce((s, [, n]) => s + n, 0);
+  const [lastY, lastN] = years[years.length - 1];
+  stats.innerHTML = [[playable + '종', '바로 해 볼 수 있는 게임'], [lastN.toLocaleString(), lastY + '년 GitHub 기여'], [ps.length + '개', '대표 작업물']]
+    .map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('');
+  projects.innerHTML = ps.map(p => {
+    const shot = p.img
+      ? `<a class="shot" href="${esc(p.url || '#')}" target="_blank" rel="noopener"><img src="${esc(p.img)}" alt="${esc(p.title)} 화면" loading="lazy" width="416" height="900">${p.url ? '<span class="play">바로 해 보기 ↗</span>' : ''}</a>`
+      : '';
+    return `<article class="card">${shot}<div class="body">
+      <span class="kind">${esc(p.kind)}</span><h3>${esc(p.title)}</h3><p class="desc">${esc(p.desc)}</p>
+      <dl class="meta"><dt>역할</dt><dd>${esc(p.role)}</dd><dt>커밋</dt><dd>${p.commits.toLocaleString()}</dd></dl>
+      ${p.url ? `<a class="link" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(host(p.url))} ↗</a>` : ''}
+      <div class="chips">${p.stack.map(s => `<span class="chip">${esc(s)}</span>`).join('')}</div></div></article>`;
+  }).join('');
+  const max = Math.max(...years.map(([, n]) => n));
+  bars.innerHTML = years.map(([y, n]) => `<div class="row"><span>${y}</span><div class="track"><div class="fill" style="width:${n / max * 100}%"></div></div><b>${n.toLocaleString()}</b></div>`).join('');
+  barsNote.textContent = `${d.contributionsNote} · 합계 ${total.toLocaleString()}`;
+  footer.innerHTML = `<a href="https://github.com/${esc(d.github)}">github.com/${esc(d.github)}</a> · <a href="mailto:${esc(d.email)}">${esc(d.email)}</a>`;
+});
+</script>
+</body>
+</html>

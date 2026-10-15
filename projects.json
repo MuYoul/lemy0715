@@ -1,0 +1,105 @@
+{
+  "name": "lemy0715",
+  "github": "MuYoul",
+  "email": "lemy0715@gmail.com",
+  "kmong": "https://kmong.com/@lemy0715",
+  "pitch": "기획부터 배포까지, 실제로 돌아가는 서비스를 혼자 끝까지 만듭니다.",
+  "summary": "앱·게임·백엔드·AI 자동화를 직접 기획하고 개발해 운영까지 해 왔습니다. 아래 게임은 지금 바로 눌러서 해 볼 수 있어요.",
+  "contributions": { "2023": 521, "2024": 172, "2025": 1110, "2026": 3802 },
+  "contributionsNote": "GitHub 기여 수(비공개 저장소 포함), 2026년은 10월 15일까지",
+  "projects": [
+    {
+      "title": "사천성",
+      "kind": "앱인토스 게임",
+      "desc": "같은 그림 두 장을 꺾인 선 세 번 안에 잇는 짝맞추기 퍼즐. 단계마다 판이 넓어지고 경로 규칙을 그려서 알려 줘요.",
+      "img": "img/sacheonseong.jpg",
+      "url": "https://sacheonseong.mycsbot.com",
+      "role": "기획 · 개발 · 배포 (1인)",
+      "stack": ["TypeScript", "Vite", "Apps-in-Toss SDK", "Cloudflare Pages"],
+      "commits": 179
+    },
+    {
+      "title": "보석 맞추기",
+      "kind": "앱인토스 게임",
+      "desc": "1,200단계 매치3 퍼즐. 10권 120장 구성에 서리·상자·매듭 등 목표 7종을 단계 생성기로 만들었어요.",
+      "img": "img/jewel-match.jpg",
+      "url": "https://jewel-match.mycsbot.com",
+      "role": "기획 · 개발 · 배포 (1인)",
+      "stack": ["TypeScript", "Vite", "Apps-in-Toss SDK", "Cloudflare Pages"],
+      "commits": 82
+    },
+    {
+      "title": "틀린그림찾기",
+      "kind": "앱인토스 게임",
+      "desc": "배경판과 물건 그림을 AI로 만들어 조립하는 그림 파이프라인으로 100단계를 만들었어요.",
+      "img": "img/spot-diff.jpg",
+      "url": "https://spot-diff.mycsbot.com",
+      "role": "기획 · 개발 · AI 그림 파이프라인",
+      "stack": ["TypeScript", "Python", "AI 이미지 생성", "Cloudflare Pages"],
+      "commits": 97
+    },
+    {
+      "title": "카드 뒤집기",
+      "kind": "앱인토스 게임",
+      "desc": "기억력 짝 맞추기 게임. 공통 키트로 메뉴·설정·저장·효과음을 공유해요.",
+      "img": "img/card-flip.jpg",
+      "url": "https://card-flip.mycsbot.com",
+      "role": "기획 · 개발 · 배포 (1인)",
+      "stack": ["TypeScript", "Vite", "Apps-in-Toss SDK"],
+      "commits": 30
+    },
+    {
+      "title": "폴짝 러너",
+      "kind": "앱인토스 게임",
+      "desc": "한 번 눌러 뛰어넘는 원터치 러너.",
+      "img": "img/hop-run.jpg",
+      "url": "https://hop-run.mycsbot.com",
+      "role": "기획 · 개발 · 배포 (1인)",
+      "stack": ["TypeScript", "Vite", "Apps-in-Toss SDK"],
+      "commits": 54
+    },
+    {
+      "title": "두더지 잡기",
+      "kind": "앱인토스 게임",
+      "desc": "60초 동안 튀어나오는 두더지를 잡는 아케이드 게임.",
+      "img": "img/mole-catch.jpg",
+      "url": "https://mole-catch.mycsbot.com",
+      "role": "기획 · 개발 · 배포 (1인)",
+      "stack": ["TypeScript", "Vite", "Apps-in-Toss SDK"],
+      "commits": 32
+    },
+    {
+      "title": "UMMA 배달 주문 서비스",
+      "kind": "앱 · 웹 · 백엔드",
+      "desc": "사용자 앱, 배달기사 앱(Flutter), 관리자 웹과 백엔드까지 전체를 만들고 배포했어요. 실서비스라 화면은 공개하지 않아요.",
+      "role": "전체 개발 · 배포",
+      "stack": ["Flutter", "Dart", "Python", "Docker Compose", "Cloudflare Tunnel"],
+      "commits": 747
+    },
+    {
+      "title": "그리드 트레이딩 봇 플랫폼",
+      "kind": "자동화 · 데이터",
+      "desc": "거래소 연동 자동매매 봇과 운영 대시보드. 비공개 저장소예요.",
+      "role": "설계 · 개발 · 운영",
+      "stack": ["Python", "TypeScript", "MCP"],
+      "commits": 848
+    },
+    {
+      "title": "simsim AI 비서",
+      "kind": "AI · MCP 서버",
+      "desc": "구글 로그인 기반 AI 비서와 OAuth 원격 MCP 서버. Claude 같은 AI 클라이언트가 로그인 후 바로 도구로 쓸 수 있어요.",
+      "url": "https://simsim.mycsbot.com",
+      "role": "기획 · 개발 · 배포 (1인)",
+      "stack": ["Python", "FastAPI", "React", "OAuth", "MCP"],
+      "commits": 31
+    },
+    {
+      "title": "ThreadScope",
+      "kind": "크롬 확장 프로그램",
+      "desc": "Threads 피드의 글마다 조회·반응 지표를 계산해 보여 주는 Manifest V3 확장. 서버 없이 브라우저 안에서만 동작해요.",
+      "role": "기획 · 개발 (1인)",
+      "stack": ["JavaScript", "Chrome Extension MV3"],
+      "commits": 4
+    }
+  ]
+}
